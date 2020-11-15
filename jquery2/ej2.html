@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery2 </title>
+    <link rel="stylesheet" href="menu.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- ESTILOS DE LA WEB -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- ESTILOS JQUERY -->
+    <link href="./js/jquery-3.5.1.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+      <div class="portada">
+            <img src="img/iconos/Logo Portada.png" alt="">
+        </div>
+    <header>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">&#9776Menu</Menu></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./ej1.html" >Evento 1</a></li>
+                    <li><a href="./ej2.html" >Evento 2</a></li>
+                    <li><a href="./ej3.html" >Evnto 3</a></li>
+                    <li><a href="./ej4.html" >Evento 4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- contenido1 -->
+        <div class="contenido">
+            <div class="botones" id="botones">
+                <button class="btn btn-primary" id="hive">Ocultar</button>
+                <button class="btn btn-success" id="show">Mostrar</button>
+                <button class="btn btn-danger" id="io">Mostrar/Ocultar</button>
+            </div>
+            <div class="befect1" id="befect1">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAACiCAMAAAATIHpEAAABLFBMVEUuOEE5ODjMzMz8/v8gLDcxMDDQ0dGFg4MtNz6WmJoAsdMzNzv7/f6Xt44tOEE3NTYwKzAmMTubgpcvLTRwcnUzNDIZJzMLHSswKjDs7u8vMDg0MDMRIS0AttpBRlGSsYrBwcVMU0oADyEoJyeGoX55kHN8gIZWXWSeoaXMxsY/Qj+AmXkqKSk8PTsAGihpbHPc3N/6vgCPeIt1ZHFjcV4oHSkrRlIbhqCOkJUAnojgzYBxYW0fHR1GQENXYlNhVV+ws7YeeI9OU1sUmLYnXG3VvpLNnZboMyHmPS7UenBEopDDspacrKZNRkpxhWxnYmIpVGQhbYEMpMTLxLfMsayPtK3mMhjCoJxkXEnTv3kWEhKHeldWT0NZVle1pWx7clJdaVgkFSUPERyWiV75uTpvAAAO/UlEQVR4nO2cjWPaxhnGERLEUH0iIxDi08Y2wWAz/AF1bAcbd+262bHdrUuaJk3a//9/2Pue7k4SYMdhSyS6+60zIHQIPXrejzvRplICgUAgEAgEAoFAIBAIBAKBQCAQCASC/xssxQEUS4/7i6wQllJV1nMToLOdKilxf50VwSpdTgYyZ5CzhHKfRq/uZEEtVfVVw0c1V/1KB7d8vtLRHmXt83a3nIk8T1b5GmmuWt8h7H+FY30K/eqzhLPqrqzOqgaeGzhf6gtydCtLj9eMMS/oFfJgj64qnzEKZVvM5EuHql6isqmDUow1vHKBeq0d124/5bdwTlEWuI2yY83vjuiWgoQ/UHGqwEwPY3EUn5ks5uSYu+sx5rfKBdGtcvFp3bZ98MvupYNi4KY7nQm4j+mYJYbTnXWy9zo9N12vj3NA55J+muVU9zvNgesOmp1tpcolcC79w4wBHJAbb9ereiCsteMfSZW3Y4xS9Bk+Vqa1u8fjtEQDMwsJTBmzSy5nd/YcRXE21l2+qY4nqXSC3QlVukOdvqxPwobN7tPwVnLyPM1QtVFcWsGbpf+1GE/ijtjLnubJVwLdRvZju1uX1FAdJaUr3G25PWoUJcUT3hh9UKWNXYeaAmxCcKt4PMtqzuVFP1k5C2M/zZNmKU2vjvvlC9ACylO/fB7X8sRmEKf5RweAxXzd9q0U60BUeRwUAWWfuwPPqETdxOKU+SiNbzr7Ku/7+CUgCYDJO0udGs5hX0O+jCO5Ve5q7DFP9Fu7reVH5UfKk8MMAl/XYmeT3QvtscemDpjg9Hqwe2i8SuzqbC+SxsW44xlghpxvW3A9ZRyH3db02j2JysooXzsmm+z7fO2i/PAQlt7cKk9dM9ec98EogEWlcffotdhzfd3Artb+olqsysSJc/Hr0/RlYkkynuSm26PalOvm921ouNqoAs91+F/leHZInZ+ATlMX1ITIl+dWQb8xEVlZoONVGTI8P3nZzabTQSW+1ANhZoV1SUIoMVXdeEopZLWRn9ZG+TytBzZkuPz9XcWuVGx9NJotrnRms1PnFYJmJI7C/DZxFpQF6r9BNaTvzh50b6V1NaRbigmVzm2POwE5PJSyHWtyI0VgxMsBqwc25Lp8LT8djaa1+7kxzh4BqiHvFFQnkg+rWeoUrKfKTFlg8Qfx5tCIHWyQ9/TqmI4D3ax1ogykwQ3Fb3urGz4Weta/Xmo8yc3PZdRQVxCdF9RbldtpzWc0N0SZuASIOycdiscQrIJi7WPNKa+DLD2OFeo8Vd5RdJ8NugHyA0udapUflwYm5MXSgIra3EvFQiWfz7NAhKc1nszKxxej6ejieL6T21O5X5gEPAZ9eLbHssC6FpeeoZ6ib15aLILdVJ2SGvi6KdyzwSVh8Q0BXu3gZ6jYucU1LYWAnNKsNgXh7nkyW6tgfpsfEOp6eYXA0hiCV1lMbxCWZH/Wr7LTV6G5pc9CmZ+mS9DbUYPPIARHc/bjTW4I6Jan6lxhUpvOG6wSuaahrjfoTKPfn/mIyFmaKQusvA6qwRRttmSqe0F7luNWZkaXt1Wq8XY8yQ1BrW79p8Rw+enajMnKF1fhl7ytCpVDdeZOTHD6Kd1So5Zk7cXEeahBI6XWYp8dWJntz2WOaVqKYH7jCe4YX+Tvb+3wcog5ilhQZ+cNuStUTsOfqbCqiB0q9w0rCxbzilV6aN0OdeMTOCv8uayKyvFNS32gngaBilMtLA6jY5ttsY+ntYiXWFJCUXgeUyOrhlU230arME+61Bu8hsIc66FlO5y5slgfhD0V6YHjXXMboVBs3cj2hYMsd3dctu2yfgftSHTxl1c1aM14e6tGyilr2FxUk/mGlQX22t2jTgT3qANCkwOfzctC6KNLoTtm8a65MYsxu9hXeZ9aLX8PrR08zKyZ86nnjhWanYbrKW1YaSVkLV6Hrpuxc087tKqo8mSjSnA4Fgvv6EQkOB4mgfiSG4HoNmXT+EpqVKvlObX745kqweIHQzNYWExvBHuwxsMXs0SnBLQs8u6to/Aub5FxeNVOhTKAxdengriPC7+I1kZ8/cM+Ht2jz9Bs93f2zIo5L4/YjvLzgKufKjmKfycgWC7BZQGFJvH0Bqm5TlAm6WiYZZXmExXYWp2Xxwry206MyQ1ZO/ZrQWjhCIrB3Qi44+UhgJuEtGPsPLDCDSa57cv9nZ0xS0KTDQWU5EmseWmVqnv83pfD1iXxhuGOU6Jhyu7XsHBuRmpmiS+RdL7WXe0HsUdzwuFcAVlwd4anGBKEVTY/XYQKdJzL0AZ3MGC9F5RJ3jXjDR3XHaSxInQ6uQ5eErZGPl7cULuxywYi0VQ21/D6VG7DC3BcKfJqZilbJYS3XFqsuLKuKzR7crhbow0Jdr3sg+uL1llm58PxULmizUf+am6RV0+V7+7Dcjou9wtSbcoPNmEyyU7VwcJ3cIHpIbeCKLzri7a2vFOOs3XjkGVK33Kzyx8VfVoL2413/3S2raMD5qaXHMhOvCuJghPah2684O0eegsiHY1Hh80U4rw7H1AesdYDpgplbq+KnRrlo/dS+YyUtVV6afKIcLhUWZ0sEE4ldnUW33lJsbKgzq9P+ZsnMc6wwgTCQcd2cVuBuYJdPsbJwsytVD4VD/JO9bL5kGxEHb26PT8PpYtqzn52fiymAHpXdqbb4EffT0KYIuWLoNnFqcJ0ipMFrLJ2OCJ03puFAsVylP3xBGphOpsdZAduAG1oFaeOP1XIkbsDYwI7catqpS63xzkYnsURqCIEt37ZbE46ZL4VProywYI7uzlWKrf3oWkC584O9+tB9xZtq3T/d73klzHVEof90ENnv6MJCP3ERscfzeBgGKCk6vUdYmVs5eCf6JfUSYM3tzlW1uy7WeVqI32mM9lgxXH8pQIFZExEyv8MKhWS0HiwjqLFFT3FFxrrq3ZyX5SKrd+NpvfA9OLWjk4XrP1xkP+T0K4nCR1Mh6XUnp+YKuHCl5Q+IPnwu6CkW4t7MWJ1CC0Z4gRSpLcnEplmCrs9FT20YhjXTzJWkdAKtbsvZHsy1ti/5ZTt7C9Y1BY8iOXfcqqKf0dSIBAIBAKBQCAQCAQCwZ8MXVkdErQwY+3kVocErdZb69nVYT1RuqVXhSTrhpc1Jlk+SQJ1e/4d8BM8+SvwT3j8FxKvTHMkULef/gJ8l043f/7++5//Bjr++O233/74PG6loiRZtx9++OF7odunEboth4jT5WB14e8A1oV/A1gX/oHEK9McCdRtJRC6LUfCdFsdEqSbfvlsdYjvvx0yzzeZ1eGbuMUK8Y20OgjdlkPothxCt+UQui2H0G05hG7LIXRbDqHbciRUN8M2yMOmIRnGQ9/dIEiGaX7OGcOI3ub85mKR/Fl8MBiw2VsB3YzXb36FMzDeuev9Vush4VoEo9VuP1k4ULnV6k3Sp7OqXR8Mz4pnB8PrRQfbnKR/SU8iYidSN8N+e/IHCHeadk9b2pa3WIKuRjBamlZ+mmpet2WYjYb5Sn6Wib5zXSgUzs7gz/WMntI1Xj45d5qT3xUTrpvRfXMCdI0zedLrazeom0H+oe+TP6BbYxeI6rbILizSvS3t0DN3G+apO4garjgsHJwVXxSGZzOyvSwMi1JvIkuGJ0cMl0Td7Pcn7397+97O5ORXGYPo1u0aXteD/4MG3W5fkvrdLvhNMk3P180w+30TN/fNvuR5RpeIbcIwuAz+YEna1W665m7b3GzKNFsVi2cS2mhYeClJB4UD3ORv8R9ASkkiMp8O3E0pyLaJ1O3NyduSbUtwenCdtQ+G5O1q5w2t3d/VGufmjdYow4YtCXXzfN2MblvTdvvGuXYDb3/40NB2Pck7b2uNG89skMGgmNaAXbd2vcwzeT3j+2lYALHAboXC8AD+FIrXuKVIH17ippddsD2a7jpzrbpJ1u39ycn71zZeYginvh9hWruhNRAPdOqWG1qrT+J0yyR+a2g3W9puuQX7tBugkgYhCS8O29phGV6gquUbeG8XfZhZl8dEN0hrB0MIRZBs+AI0HB5IhcKLg5dFSHUvhoUXoN5weP1KzoFuHflV75lMBU+kbkYf89t7+9R1T3lm2vp4qDXAfVoLdDgEzbwu2ge8B7odHWqHRx/bWCMahgmafYQBR1ta68jT2kdt7eboAwwoQ34jmRAS/aTnp7UXRVDqugdxWgT1XqBgZz18et3rgaCQ33qgci4jgUefZTLp573k+k0ylNdgube/h3U7BF81ymZbO/cOta1zbcuE/HYOfQj6DyRqtMGQ52wf81DbPQJ7tcFooNshiKwZJtaFiG4QhL54VDcIUIhP6EjQZ/BMwroAijHdpE1WGxKpm+1VNqA2/E7iFLM86HaDupke6iZB1tLOsQ/pe9D4+rq1kVZUN3/jvG4kTnu9DOpWJJpx3aQixOewR3QbDoluBo9Twzg9TbBu9h+//frrm5M/fk/LBvHaeTmsG54/pDnUrdvv9w0/TnfNj0eeF9FtF4L3qOyZTDeM9j7RDerC6UTObUL70YMcdxbS7axnQHXApxCuGKeS9I7VBUNy3UyCdSPt2xupB32IIZU1bSuqG1RNaE6wf8ME1yL1FOIRaqgZ1g0TH+yBdYHqdgi749QCNPBOVXlwCtnML59ct2swGngMW+ACeQmW5H0I+DS9mVzdjNd/vD95CyH4Tu70JO+w0TK3GlAeG23QrQG6GaAW9HGkvDZaLZgBGNJNu72L+zTIPjBo1/O6W+321nm53fjgwc7QfN002hioKERm7K5ncGY1fFnEHAeJjtQF2IBdHD4OX2KjMryGfihjbMrNTdB7PcF+g7rw9gQbTL8R8UAVz/T8+buJL7DjkPA5Yvjzeg9a4NA+BgyA5g/7Yvqa7FTGv5CwoA3JnGZI40um8nRWXyR/in5HzLfB/s82n0EP7n+f5OoG84PXJA+9cl/NT5w8iM7ug4skT6A3GSxYEHmEzefZX9IYoVlmt6TqRueZmdMF+pjtRmvxVP+p9GaXQz4FtB+kA9nkywFJ1e0xuuZ/47b/DauoW/yqraZuSUDothxCt+UQui2H0G05hG7LkSDddKHbkqytDnFLJRAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQ/Hn5D41fOU55sKNzAAAAAElFTkSuQmCC">
+                 <h1>jQuery</h1>
+                <p>jQuery es una biblioteca multiplataforma de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera de interactuar con los documentos HTML, manipular el árbol DOM, manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.​ </p>
+            </div>
+        </div>
+      </div>
+    <script src="./js/ej2.js"></script>
+</body>
+</html>

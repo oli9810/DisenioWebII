@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #313131;
+    padding: 10px;
+}
+.nav-item {
+    text-align: center;
+}
+.submenu1 {
+    background: rgb(73, 71, 70);
+    width: 20%;
+    float: left;
+    text-align: center;
+    border: 5px solid rgb(12, 236, 199);
+}
+.contenido {
+    background: cornflowerblue;
+    width: 80%;
+    float: right;
+    border: 5px solid grey;
+}
+.botones {
+    text-align: center;
+}
+.befect1 {
+    background: #ffffff;
+    text-align: center;
+}
+.table {
+    background: #cac6c6;
+}
+
+/*khbh*/
+.box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: black;
+}
+#path {
+    height: 244px;
+    font-size: 70%;
+    border-left: 2px dashed red;
+    border-bottom: 2px dashed green;
+    border-right: 2px dashed blue;
+}
+
+button {
+    width: 12em;
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+/*............FOOTER............. */
+
+footer {
+    width: 100%;
+    background: #202020;
+    color: white;
+
+}
+
+.container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colum1 {
+    max-width: 400px;
+}
+
+.colum1 h1 {
+    font-size: 22px;
+}
+
+.colum1 p {
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2 {
+    max-width: 400px;
+
+}
+
+.colum2 h1 {
+    font-size: 22px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img {
+    width: 36px;
+    height: 36px;
+}
+
+.row label {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3 {
+    max-width: 400px;
+}
+
+.colum3 h1 {
+    font-size: 22px;
+}
+
+.row2 {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img {
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label {
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer {
+    width: 100%;
+    background: #101010;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright {
+    color: #C7C7C7;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a {
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+p {
+    margin: 0px;
+}
