@@ -113,7 +113,7 @@ function evento4() {
    
   var dato=document.getElementById('Contenedor');
     dato.innerHTML=`<div class="Contenedor"> 
-    <img src="/Img/dw2.jpg" alt="">
+    <img src="/JavaScript/Img/dw2.jpg" alt="">
     </div>`;
 }
  
