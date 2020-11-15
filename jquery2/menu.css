@@ -7,7 +7,11 @@ header {
     width: 100%;
     background: #4e4d4d;
 }
-
+ 
+.FT1{
+    width: 100%;
+    margin-top: 25%;
+}
 .portada img {
     width: 100%;
     display: flex;
